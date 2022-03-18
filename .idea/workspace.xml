@@ -16,9 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e43dac9-407c-4153-8b55-957452e0e04c" name="Default Changelist" comment="video">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1e43dac9-407c-4153-8b55-957452e0e04c" name="Default Changelist" comment="readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +92,7 @@
       <workItem from="1647357912663" duration="3000" />
       <workItem from="1647360090665" duration="9341000" />
       <workItem from="1647451372291" duration="28176000" />
-      <workItem from="1647574655734" duration="2781000" />
+      <workItem from="1647574655734" duration="3115000" />
     </task>
     <task id="LOCAL-00001" summary="ui">
       <created>1647360131846</created>
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647576847414</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="readme">
+      <created>1647578352593</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647578352593</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +155,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ui" />
     <MESSAGE value="video" />
-    <option name="LAST_COMMIT_MESSAGE" value="video" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1647575794408">
