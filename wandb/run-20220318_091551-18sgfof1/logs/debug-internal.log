@@ -1,0 +1,40 @@
+2022-03-18 09:15:52,537 INFO    MainThread:13060 [internal.py:wandb_internal():88] W&B internal server running at pid: 13060, started at: 2022-03-18 09:15:52.533395
+2022-03-18 09:15:52,539 INFO    WriterThread:13060 [datastore.py:open_for_write():77] open: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220318_091551-18sgfof1\run-18sgfof1.wandb
+2022-03-18 09:15:52,539 DEBUG   HandlerThread:13060 [handler.py:handle_request():121] handle_request: check_version
+2022-03-18 09:15:52,544 DEBUG   SenderThread:13060 [sender.py:send():176] send: header
+2022-03-18 09:15:52,544 DEBUG   SenderThread:13060 [sender.py:send_request():186] send_request: check_version
+2022-03-18 09:15:52,996 DEBUG   SenderThread:13060 [sender.py:send():176] send: run
+2022-03-18 09:15:53,004 INFO    SenderThread:13060 [sender.py:_maybe_setup_resume():395] checking resume status for None/train/18sgfof1
+2022-03-18 09:15:57,519 INFO    SenderThread:13060 [dir_watcher.py:__init__():168] watching files in: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220318_091551-18sgfof1\files
+2022-03-18 09:15:57,519 INFO    SenderThread:13060 [sender.py:_start_run_threads():696] run started: 18sgfof1 with start time 1647566151
+2022-03-18 09:15:57,519 DEBUG   SenderThread:13060 [sender.py:send():176] send: summary
+2022-03-18 09:15:57,520 INFO    SenderThread:13060 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2022-03-18 09:15:57,520 DEBUG   HandlerThread:13060 [handler.py:handle_request():121] handle_request: run_start
+2022-03-18 09:15:58,524 INFO    Thread-12 :13060 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220318_091551-18sgfof1\files\wandb-summary.json
+2022-03-18 09:15:59,212 DEBUG   HandlerThread:13060 [meta.py:__init__():39] meta init
+2022-03-18 09:15:59,215 DEBUG   HandlerThread:13060 [meta.py:__init__():53] meta init done
+2022-03-18 09:15:59,215 DEBUG   HandlerThread:13060 [meta.py:probe():210] probe
+2022-03-18 09:15:59,216 DEBUG   HandlerThread:13060 [meta.py:_setup_git():200] setup git
+2022-03-18 09:15:59,321 DEBUG   HandlerThread:13060 [meta.py:_setup_git():207] setup git done
+2022-03-18 09:15:59,321 DEBUG   HandlerThread:13060 [meta.py:_save_pip():57] save pip
+2022-03-18 09:15:59,323 DEBUG   HandlerThread:13060 [meta.py:_save_pip():71] save pip done
+2022-03-18 09:15:59,323 DEBUG   HandlerThread:13060 [meta.py:probe():252] probe done
+2022-03-18 09:15:59,326 DEBUG   SenderThread:13060 [sender.py:send():176] send: files
+2022-03-18 09:15:59,326 INFO    SenderThread:13060 [sender.py:_save_file():821] saving file wandb-metadata.json with policy now
+2022-03-18 09:15:59,403 DEBUG   HandlerThread:13060 [handler.py:handle_request():121] handle_request: stop_status
+2022-03-18 09:15:59,404 DEBUG   SenderThread:13060 [sender.py:send_request():186] send_request: stop_status
+2022-03-18 09:15:59,529 INFO    Thread-12 :13060 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220318_091551-18sgfof1\files\output.log
+2022-03-18 09:15:59,530 INFO    Thread-12 :13060 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220318_091551-18sgfof1\files\wandb-metadata.json
+2022-03-18 09:15:59,530 INFO    Thread-12 :13060 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220318_091551-18sgfof1\files\requirements.txt
+2022-03-18 09:15:59,902 DEBUG   SenderThread:13060 [sender.py:send():176] send: config
+2022-03-18 09:16:00,607 INFO    Thread-17 :13060 [upload_job.py:push():133] Uploaded file C:\Users\Administrator.DESKTOP-MNP5GMJ\AppData\Local\Temp\tmp5voy5heiwandb\osrwgttk-wandb-metadata.json
+2022-03-18 09:16:01,534 INFO    Thread-12 :13060 [dir_watcher.py:_on_file_modified():229] file/dir modified: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220318_091551-18sgfof1\files\config.yaml
+2022-03-18 09:16:14,907 DEBUG   HandlerThread:13060 [handler.py:handle_request():121] handle_request: stop_status
+2022-03-18 09:16:14,907 DEBUG   SenderThread:13060 [sender.py:send_request():186] send_request: stop_status
+2022-03-18 09:16:30,375 DEBUG   HandlerThread:13060 [handler.py:handle_request():121] handle_request: stop_status
+2022-03-18 09:16:30,375 DEBUG   SenderThread:13060 [sender.py:send_request():186] send_request: stop_status
+2022-03-18 09:16:30,875 DEBUG   SenderThread:13060 [sender.py:send():176] send: stats
+2022-03-18 09:16:45,883 DEBUG   HandlerThread:13060 [handler.py:handle_request():121] handle_request: stop_status
+2022-03-18 09:16:45,883 DEBUG   SenderThread:13060 [sender.py:send_request():186] send_request: stop_status
+2022-03-18 09:17:01,398 DEBUG   HandlerThread:13060 [handler.py:handle_request():121] handle_request: stop_status
+2022-03-18 09:17:01,398 DEBUG   SenderThread:13060 [sender.py:send_request():186] send_request: stop_status

@@ -1,0 +1,1550 @@
+Overriding model.yaml nc=80 with nc=2
+                 from  n    params  module                                  arguments
+  0                -1  1      1760  models.common.Conv                      [3, 16, 6, 2, 2]
+  1                -1  1      4672  models.common.Conv                      [16, 32, 3, 2]
+  2                -1  1      4800  models.common.C3                        [32, 32, 1]
+  3                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  4                -1  2     29184  models.common.C3                        [64, 64, 2]
+  5                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  6                -1  3    156928  models.common.C3                        [128, 128, 3]
+  7                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  8                -1  1    296448  models.common.C3                        [256, 256, 1]
+  9                -1  1    164608  models.common.SPPF                      [256, 256, 5]
+ 10                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 14                -1  1      8320  models.common.Conv                      [128, 64, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     22912  models.common.C3                        [128, 64, 1, False]
+ 18                -1  1     36992  models.common.Conv                      [64, 64, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1     74496  models.common.C3                        [128, 128, 1, False]
+ 21                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 24      [17, 20, 23]  1      9471  models.yolo.Detect                      [2, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [64, 128, 256]]
+Model Summary: 270 layers, 1766623 parameters, 1766623 gradients, 4.2 GFLOPs
+Transferred 342/349 items from yolov5n.pt
+freezing model.0.conv.weight
+freezing model.0.bn.weight
+freezing model.0.bn.bias
+freezing model.1.conv.weight
+freezing model.1.bn.weight
+freezing model.1.bn.bias
+freezing model.2.cv1.conv.weight
+freezing model.2.cv1.bn.weight
+freezing model.2.cv1.bn.bias
+freezing model.2.cv2.conv.weight
+freezing model.2.cv2.bn.weight
+freezing model.2.cv2.bn.bias
+freezing model.2.cv3.conv.weight
+freezing model.2.cv3.bn.weight
+freezing model.2.cv3.bn.bias
+freezing model.2.m.0.cv1.conv.weight
+freezing model.2.m.0.cv1.bn.weight
+freezing model.2.m.0.cv1.bn.bias
+freezing model.2.m.0.cv2.conv.weight
+freezing model.2.m.0.cv2.bn.weight
+freezing model.2.m.0.cv2.bn.bias
+freezing model.3.conv.weight
+freezing model.3.bn.weight
+freezing model.3.bn.bias
+freezing model.4.cv1.conv.weight
+freezing model.4.cv1.bn.weight
+freezing model.4.cv1.bn.bias
+freezing model.4.cv2.conv.weight
+freezing model.4.cv2.bn.weight
+freezing model.4.cv2.bn.bias
+freezing model.4.cv3.conv.weight
+freezing model.4.cv3.bn.weight
+freezing model.4.cv3.bn.bias
+freezing model.4.m.0.cv1.conv.weight
+freezing model.4.m.0.cv1.bn.weight
+freezing model.4.m.0.cv1.bn.bias
+freezing model.4.m.0.cv2.conv.weight
+freezing model.4.m.0.cv2.bn.weight
+freezing model.4.m.0.cv2.bn.bias
+freezing model.4.m.1.cv1.conv.weight
+freezing model.4.m.1.cv1.bn.weight
+freezing model.4.m.1.cv1.bn.bias
+freezing model.4.m.1.cv2.conv.weight
+freezing model.4.m.1.cv2.bn.weight
+freezing model.4.m.1.cv2.bn.bias
+freezing model.5.conv.weight
+freezing model.5.bn.weight
+freezing model.5.bn.bias
+freezing model.6.cv1.conv.weight
+freezing model.6.cv1.bn.weight
+freezing model.6.cv1.bn.bias
+freezing model.6.cv2.conv.weight
+freezing model.6.cv2.bn.weight
+freezing model.6.cv2.bn.bias
+freezing model.6.cv3.conv.weight
+freezing model.6.cv3.bn.weight
+freezing model.6.cv3.bn.bias
+freezing model.6.m.0.cv1.conv.weight
+freezing model.6.m.0.cv1.bn.weight
+freezing model.6.m.0.cv1.bn.bias
+freezing model.6.m.0.cv2.conv.weight
+freezing model.6.m.0.cv2.bn.weight
+freezing model.6.m.0.cv2.bn.bias
+freezing model.6.m.1.cv1.conv.weight
+freezing model.6.m.1.cv1.bn.weight
+freezing model.6.m.1.cv1.bn.bias
+freezing model.6.m.1.cv2.conv.weight
+freezing model.6.m.1.cv2.bn.weight
+freezing model.6.m.1.cv2.bn.bias
+freezing model.6.m.2.cv1.conv.weight
+freezing model.6.m.2.cv1.bn.weight
+freezing model.6.m.2.cv1.bn.bias
+freezing model.6.m.2.cv2.conv.weight
+freezing model.6.m.2.cv2.bn.weight
+freezing model.6.m.2.cv2.bn.bias
+freezing model.7.conv.weight
+freezing model.7.bn.weight
+freezing model.7.bn.bias
+freezing model.8.cv1.conv.weight
+freezing model.8.cv1.bn.weight
+freezing model.8.cv1.bn.bias
+freezing model.8.cv2.conv.weight
+freezing model.8.cv2.bn.weight
+freezing model.8.cv2.bn.bias
+freezing model.8.cv3.conv.weight
+freezing model.8.cv3.bn.weight
+freezing model.8.cv3.bn.bias
+freezing model.8.m.0.cv1.conv.weight
+freezing model.8.m.0.cv1.bn.weight
+freezing model.8.m.0.cv1.bn.bias
+freezing model.8.m.0.cv2.conv.weight
+freezing model.8.m.0.cv2.bn.weight
+freezing model.8.m.0.cv2.bn.bias
+freezing model.9.cv1.conv.weight
+freezing model.9.cv1.bn.weight
+freezing model.9.cv1.bn.bias
+freezing model.9.cv2.conv.weight
+freezing model.9.cv2.bn.weight
+freezing model.9.cv2.bn.bias
+freezing model.10.conv.weight
+freezing model.10.bn.weight
+freezing model.10.bn.bias
+freezing model.13.cv1.conv.weight
+freezing model.13.cv1.bn.weight
+freezing model.13.cv1.bn.bias
+freezing model.13.cv2.conv.weight
+freezing model.13.cv2.bn.weight
+freezing model.13.cv2.bn.bias
+freezing model.13.cv3.conv.weight
+freezing model.13.cv3.bn.weight
+freezing model.13.cv3.bn.bias
+freezing model.13.m.0.cv1.conv.weight
+freezing model.13.m.0.cv1.bn.weight
+freezing model.13.m.0.cv1.bn.bias
+freezing model.13.m.0.cv2.conv.weight
+freezing model.13.m.0.cv2.bn.weight
+freezing model.13.m.0.cv2.bn.bias
+freezing model.14.conv.weight
+freezing model.14.bn.weight
+freezing model.14.bn.bias
+freezing model.17.cv1.conv.weight
+freezing model.17.cv1.bn.weight
+freezing model.17.cv1.bn.bias
+freezing model.17.cv2.conv.weight
+freezing model.17.cv2.bn.weight
+freezing model.17.cv2.bn.bias
+freezing model.17.cv3.conv.weight
+freezing model.17.cv3.bn.weight
+freezing model.17.cv3.bn.bias
+freezing model.17.m.0.cv1.conv.weight
+freezing model.17.m.0.cv1.bn.weight
+freezing model.17.m.0.cv1.bn.bias
+freezing model.17.m.0.cv2.conv.weight
+freezing model.17.m.0.cv2.bn.weight
+freezing model.17.m.0.cv2.bn.bias
+freezing model.18.conv.weight
+freezing model.18.bn.weight
+freezing model.18.bn.bias
+freezing model.20.cv1.conv.weight
+freezing model.20.cv1.bn.weight
+freezing model.20.cv1.bn.bias
+freezing model.20.cv2.conv.weight
+freezing model.20.cv2.bn.weight
+freezing model.20.cv2.bn.bias
+freezing model.20.cv3.conv.weight
+freezing model.20.cv3.bn.weight
+freezing model.20.cv3.bn.bias
+freezing model.20.m.0.cv1.conv.weight
+freezing model.20.m.0.cv1.bn.weight
+freezing model.20.m.0.cv1.bn.bias
+freezing model.20.m.0.cv2.conv.weight
+freezing model.20.m.0.cv2.bn.weight
+freezing model.20.m.0.cv2.bn.bias
+freezing model.21.conv.weight
+freezing model.21.bn.weight
+freezing model.21.bn.bias
+freezing model.23.cv1.conv.weight
+freezing model.23.cv1.bn.weight
+freezing model.23.cv1.bn.bias
+freezing model.23.cv2.conv.weight
+freezing model.23.cv2.bn.weight
+freezing model.23.cv2.bn.bias
+freezing model.23.cv3.conv.weight
+freezing model.23.cv3.bn.weight
+freezing model.23.cv3.bn.bias
+freezing model.23.m.0.cv1.conv.weight
+freezing model.23.m.0.cv1.bn.weight
+freezing model.23.m.0.cv1.bn.bias
+freezing model.23.m.0.cv2.conv.weight
+freezing model.23.m.0.cv2.bn.weight
+freezing model.23.m.0.cv2.bn.bias
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight (no decay), 60 weight, 60 bias
+[34m[1mtrain: [39m[22mScanning '/media/system/dataset/MASK-LARGE/train/labels.cache' images and labels... 7959 found, 0 missing, 2 empty, 1 corrupt: 100%|███████████████████████████████████████████████████████████| 7959/7959 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mWARNING: /media/system/dataset/MASK-LARGE/train/images/test_00000306.jpg: ignoring corrupt image/label: could not convert string to float: 'None'
+[34m[1mval: [39m[22mScanning '/media/system/dataset/MASK-LARGE/val/labels.cache' images and labels... 105 found, 0 missing, 0 empty, 0 corrupt: 100%|██████████████████████████████████████████████████████████████████| 105/105 [00:00<?, ?it/s]
+Plotting labels to runs/train/exp5/labels.jpg...
+[34m[1mAutoAnchor: [39m[22m4.97 anchors/target, 0.998 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/train/exp5
+Starting training for 300 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     0/299    0.308G    0.1016   0.02975   0.02343        22       640: 100%|██████████| 995/995 [04:20<00:00,  3.82it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.58it/s]
+                 all        105        696     0.0261     0.0305     0.0122    0.00215
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     1/299    0.942G   0.07647   0.03231   0.01778        11       640: 100%|██████████| 995/995 [04:17<00:00,  3.86it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.60it/s]
+                 all        105        696     0.0364     0.0522     0.0178    0.00293
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     2/299    0.942G   0.07241     0.031   0.01616        41       640: 100%|██████████| 995/995 [04:16<00:00,  3.88it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.63it/s]
+                 all        105        696     0.0309     0.0908     0.0179    0.00307
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     3/299    0.942G   0.07476   0.02972   0.01539        24       640: 100%|██████████| 995/995 [04:16<00:00,  3.88it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.59it/s]
+                 all        105        696     0.0206      0.124     0.0136    0.00226
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     4/299    0.942G   0.07461   0.02909   0.01528        26       640: 100%|██████████| 995/995 [04:28<00:00,  3.71it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.57it/s]
+                 all        105        696     0.0245      0.159     0.0169    0.00298
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     5/299    0.942G   0.07442   0.02963   0.01502        18       640: 100%|██████████| 995/995 [04:29<00:00,  3.69it/s]
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.45it/s]
+                 all        105        696     0.0407      0.186     0.0297    0.00539
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     6/299    0.942G   0.07434   0.02944   0.01507        19       640: 100%|██████████| 995/995 [04:30<00:00,  3.68it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.43it/s]
+                 all        105        696     0.0506       0.17     0.0366     0.0068
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     7/299    0.942G   0.07441   0.02933   0.01495        15       640: 100%|██████████| 995/995 [04:18<00:00,  3.85it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.65it/s]
+                 all        105        696     0.0336      0.145     0.0253    0.00451
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     8/299    0.942G   0.07515   0.02926   0.01489        25       640: 100%|██████████| 995/995 [04:15<00:00,  3.89it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.61it/s]
+                 all        105        696     0.0459      0.159     0.0335     0.0063
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     9/299    0.942G   0.07403   0.02978   0.01497        30       640: 100%|██████████| 995/995 [04:19<00:00,  3.83it/s]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 7/7 [00:02<00:00,  2.54it/s]
+                 all        105        696      0.044      0.174     0.0306    0.00554
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+

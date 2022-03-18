@@ -1,0 +1,33 @@
+Dataset not found, missing paths: ['/media/system/DeepLearning/projects/yolov5_mask_video/E:\\dataset\\MASK-LARGE\\val\\images']
+Traceback (most recent call last):
+  File "train.py", line 647, in <module>
+    main(opt)
+  File "train.py", line 543, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "train.py", line 99, in train
+    loggers = Loggers(save_dir, weights, opt, hyp, LOGGER)  # loggers instance
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/loggers/__init__.py", line 73, in __init__
+    self.wandb = WandbLogger(self.opt, run_id)
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/loggers/wandb/wandb_utils.py", line 180, in __init__
+    self.data_dict = check_wandb_dataset(opt.data)
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/loggers/wandb/wandb_utils.py", line 56, in check_wandb_dataset
+    return check_dataset(data_file)
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/general.py", line 468, in check_dataset
+    raise Exception('Dataset not found.')
+Exception: Dataset not found.
+Traceback (most recent call last):
+  File "train.py", line 647, in <module>
+    main(opt)
+  File "train.py", line 543, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "train.py", line 99, in train
+    loggers = Loggers(save_dir, weights, opt, hyp, LOGGER)  # loggers instance
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/loggers/__init__.py", line 73, in __init__
+    self.wandb = WandbLogger(self.opt, run_id)
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/loggers/wandb/wandb_utils.py", line 180, in __init__
+    self.data_dict = check_wandb_dataset(opt.data)
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/loggers/wandb/wandb_utils.py", line 56, in check_wandb_dataset
+    return check_dataset(data_file)
+  File "/media/system/DeepLearning/projects/yolov5_mask_video/utils/general.py", line 468, in check_dataset
+    raise Exception('Dataset not found.')
+Exception: Dataset not found.

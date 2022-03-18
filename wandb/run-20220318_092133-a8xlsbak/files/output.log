@@ -1,0 +1,475 @@
+Overriding model.yaml nc=80 with nc=2
+                 from  n    params  module                                  arguments
+  0                -1  1      1760  models.common.Conv                      [3, 16, 6, 2, 2]
+  1                -1  1      4672  models.common.Conv                      [16, 32, 3, 2]
+  2                -1  1      4800  models.common.C3                        [32, 32, 1]
+  3                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  4                -1  2     29184  models.common.C3                        [64, 64, 2]
+  5                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  6                -1  3    156928  models.common.C3                        [128, 128, 3]
+  7                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  8                -1  1    296448  models.common.C3                        [256, 256, 1]
+  9                -1  1    164608  models.common.SPPF                      [256, 256, 5]
+ 10                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 14                -1  1      8320  models.common.Conv                      [128, 64, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     22912  models.common.C3                        [128, 64, 1, False]
+ 18                -1  1     36992  models.common.Conv                      [64, 64, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1     74496  models.common.C3                        [128, 128, 1, False]
+ 21                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 24      [17, 20, 23]  1      9471  models.yolo.Detect                      [2, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [64, 128, 256]]
+Model Summary: 270 layers, 1766623 parameters, 1766623 gradients, 4.2 GFLOPs
+Transferred 342/349 items from yolov5n.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight (no decay), 60 weight, 60 bias
+
+
+
+[34m[1mtrain: [39m[22mScanning '/media/system/dataset/MASK-LARGE/train/labels' images and labels...4798 found, 0 missing, 1 empty, 1 corrupt:  60%|██████████████████████████████████▎                      | 4798/7959 [00:08<00:08, 387.83it/s]/home/zzm/.local/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:822: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0.
+  warnings.warn(str(msg))
+[34m[1mtrain: [39m[22mScanning '/media/system/dataset/MASK-LARGE/train/labels' images and labels...5627 found, 0 missing, 2 empty, 1 corrupt:  71%|████████████████████████████████████████▎                | 5627/7959 [00:10<00:05, 434.52it/s]/home/zzm/.local/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:822: UserWarning: Corrupt EXIF data.  Expecting to read 12 bytes but only got 4.
+  warnings.warn(str(msg))
+
+
+[34m[1mtrain: [39m[22mScanning '/media/system/dataset/MASK-LARGE/train/labels' images and labels...7959 found, 0 missing, 2 empty, 1 corrupt: 100%|█████████████████████████████████████████████████████████| 7959/7959 [00:14<00:00, 532.50it/s]
+[34m[1mtrain: [39m[22mWARNING: /media/system/dataset/MASK-LARGE/train/images/test_00000306.jpg: ignoring corrupt image/label: could not convert string to float: 'None'
+[34m[1mtrain: [39m[22mNew cache created: /media/system/dataset/MASK-LARGE/train/labels.cache
+[34m[1mval: [39m[22mScanning '/media/system/dataset/MASK-LARGE/val/labels' images and labels...105 found, 0 missing, 0 empty, 0 corrupt: 100%|████████████████████████████████████████████████████████████████| 105/105 [00:00<00:00, 218.18it/s]
+[34m[1mval: [39m[22mNew cache created: /media/system/dataset/MASK-LARGE/val/labels.cache
+Plotting labels to runs/train/exp4/labels.jpg...
+[34m[1mAutoAnchor: [39m[22m4.97 anchors/target, 0.998 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mruns/train/exp4
+Starting training for 300 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

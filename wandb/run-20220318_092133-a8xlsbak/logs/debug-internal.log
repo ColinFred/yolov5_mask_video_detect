@@ -1,0 +1,628 @@
+2022-03-18 09:21:34,122 INFO    MainThread:5471 [internal.py:wandb_internal():92] W&B internal server running at pid: 5471, started at: 2022-03-18 09:21:34.122332
+2022-03-18 09:21:34,124 INFO    WriterThread:5471 [datastore.py:open_for_write():77] open: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/run-a8xlsbak.wandb
+2022-03-18 09:21:34,126 DEBUG   SenderThread:5471 [sender.py:send():235] send: header
+2022-03-18 09:21:34,126 DEBUG   SenderThread:5471 [sender.py:send():235] send: run
+2022-03-18 09:21:34,135 INFO    SenderThread:5471 [sender.py:_maybe_setup_resume():492] checking resume status for None/YOLOv5/a8xlsbak
+2022-03-18 09:21:34,932 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: check_version
+2022-03-18 09:21:34,955 INFO    SenderThread:5471 [dir_watcher.py:__init__():169] watching files in: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files
+2022-03-18 09:21:34,955 INFO    SenderThread:5471 [sender.py:_start_run_threads():812] run started: a8xlsbak with start time 1647566493
+2022-03-18 09:21:34,955 DEBUG   SenderThread:5471 [sender.py:send():235] send: summary
+2022-03-18 09:21:34,956 INFO    SenderThread:5471 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-18 09:21:34,956 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: check_version
+2022-03-18 09:21:35,215 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: run_start
+2022-03-18 09:21:35,217 DEBUG   HandlerThread:5471 [meta.py:__init__():37] meta init
+2022-03-18 09:21:35,217 DEBUG   HandlerThread:5471 [meta.py:__init__():51] meta init done
+2022-03-18 09:21:35,217 DEBUG   HandlerThread:5471 [meta.py:probe():211] probe
+2022-03-18 09:21:35,224 DEBUG   HandlerThread:5471 [meta.py:_setup_git():201] setup git
+2022-03-18 09:21:35,239 DEBUG   HandlerThread:5471 [meta.py:_setup_git():208] setup git done
+2022-03-18 09:21:35,239 DEBUG   HandlerThread:5471 [meta.py:_save_pip():55] save pip
+2022-03-18 09:21:35,239 DEBUG   HandlerThread:5471 [meta.py:_save_pip():69] save pip done
+2022-03-18 09:21:35,240 DEBUG   HandlerThread:5471 [meta.py:probe():249] probe done
+2022-03-18 09:21:35,260 DEBUG   SenderThread:5471 [sender.py:send():235] send: files
+2022-03-18 09:21:35,260 INFO    SenderThread:5471 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-18 09:21:35,264 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:21:35,265 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:21:35,652 DEBUG   SenderThread:5471 [sender.py:send():235] send: telemetry
+2022-03-18 09:21:35,652 DEBUG   SenderThread:5471 [sender.py:send():235] send: config
+2022-03-18 09:21:35,957 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_created():217] file/dir created: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/requirements.txt
+2022-03-18 09:21:35,958 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_created():217] file/dir created: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:35,958 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_created():217] file/dir created: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/wandb-summary.json
+2022-03-18 09:21:35,958 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_created():217] file/dir created: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/wandb-metadata.json
+2022-03-18 09:21:36,828 INFO    Thread-11 :5471 [upload_job.py:push():137] Uploaded file /tmp/tmpjd6i80lewandb/1boj7un6-wandb-metadata.json
+2022-03-18 09:21:37,957 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:39,997 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:42,018 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:44,051 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:46,068 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:48,095 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:50,109 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:50,652 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:21:50,660 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:21:52,129 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:54,158 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:56,159 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:21:58,160 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:00,161 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:02,162 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:03,441 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:22:04,163 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:05,164 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/config.yaml
+2022-03-18 09:22:06,164 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:06,650 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:22:06,651 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:22:08,165 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:10,166 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:12,168 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:14,169 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:16,174 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:18,176 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:20,176 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:22,051 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:22:22,051 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:22:22,178 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:24,179 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:26,180 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:28,181 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:30,182 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:32,184 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:33,663 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:22:34,185 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:36,186 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:37,439 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:22:37,440 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:22:38,187 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:40,188 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:42,204 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:44,205 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:46,206 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:48,207 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:50,208 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:52,209 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:52,823 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:22:52,823 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:22:54,211 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:56,212 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:22:58,213 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:00,214 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:02,216 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:03,872 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:23:04,217 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:06,218 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:08,195 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:23:08,195 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:23:08,219 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:10,223 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:12,224 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:14,225 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:16,226 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:18,227 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:20,228 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:22,229 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:23,579 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:23:23,580 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:23:24,230 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:26,232 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:28,233 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:30,234 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:32,235 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:34,085 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:23:34,236 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:36,237 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:38,239 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:38,953 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:23:38,953 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:23:40,243 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:42,244 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:44,245 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:46,246 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:48,247 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:50,248 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:52,249 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:54,250 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:54,341 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:23:54,341 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:23:56,251 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:23:58,252 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:00,253 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:02,254 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:04,255 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:04,294 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:24:06,256 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:08,257 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:09,700 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:24:09,700 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:24:10,259 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:12,260 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:14,261 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:16,262 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:18,263 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:20,264 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:22,265 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:24,265 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:25,072 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:24:25,072 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:24:26,266 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:28,267 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:30,272 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:32,273 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:34,274 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:34,475 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:24:36,275 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:38,276 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:40,277 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:40,436 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:24:40,437 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:24:42,278 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:44,279 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:46,288 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:48,296 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:50,297 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:52,298 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:54,299 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:55,799 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:24:55,799 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:24:56,300 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:24:58,301 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:00,302 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:02,303 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:04,304 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:04,681 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:25:06,305 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:08,306 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:10,307 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:11,183 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:25:11,184 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:25:12,308 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:14,309 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:16,310 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:18,311 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:20,312 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:22,313 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:24,314 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:26,315 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:26,570 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:25:26,570 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:25:28,316 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:30,317 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:32,318 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:34,319 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:34,883 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:25:36,320 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:38,321 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:40,322 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:41,958 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:25:41,958 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:25:42,323 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:44,324 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:46,325 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:48,326 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:50,335 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:52,336 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:54,337 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:56,338 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:25:57,373 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:25:57,373 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:25:58,339 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:00,340 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:02,342 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:04,343 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:05,089 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:26:06,344 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:08,345 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:10,346 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:12,347 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:12,800 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:26:12,800 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:26:14,348 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:16,349 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:18,351 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:20,352 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:22,353 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:24,354 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:26,355 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:28,173 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:26:28,173 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:26:28,356 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:30,357 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:32,358 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:34,359 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:35,293 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:26:36,364 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:38,364 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:40,365 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:42,366 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:43,542 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:26:43,543 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:26:44,368 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:46,368 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:48,370 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:50,370 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:52,371 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:54,372 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:56,373 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:58,374 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:26:58,926 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:26:58,926 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:27:00,375 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:02,376 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:04,377 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:05,499 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:27:06,378 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:08,379 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:10,380 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:12,381 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:14,329 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:27:14,329 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:27:14,382 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:16,383 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:18,384 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:20,385 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:22,386 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:24,387 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:26,388 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:28,389 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:29,723 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:27:29,723 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:27:30,390 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:32,391 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:34,394 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:35,700 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:27:36,395 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:38,396 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:40,397 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:42,398 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:44,399 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:45,177 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:27:45,177 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:27:46,400 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:48,401 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:50,402 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:52,403 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:54,404 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:56,405 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:27:58,406 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:00,407 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:00,574 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:28:00,574 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:28:02,408 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:04,409 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:05,901 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:28:06,410 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:08,411 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:10,412 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:12,413 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:14,414 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:15,969 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:28:15,969 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:28:16,415 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:18,416 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:20,417 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:22,418 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:24,420 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:26,421 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:28,424 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:30,425 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:31,340 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:28:31,340 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:28:32,426 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:34,427 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:36,107 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:28:36,428 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:38,429 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:40,430 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:42,431 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:44,432 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:46,433 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:46,719 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:28:46,720 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:28:48,434 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:50,435 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:52,436 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:54,437 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:56,438 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:28:58,439 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:00,440 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:02,086 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:29:02,086 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:29:02,442 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:04,443 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:06,312 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:29:06,444 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:08,445 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:10,446 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:12,447 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:14,448 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:16,449 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:17,469 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:29:17,469 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:29:18,450 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:20,451 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:22,452 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:24,453 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:26,454 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:28,455 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:30,456 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:32,457 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:32,827 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:29:32,827 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:29:34,458 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:36,459 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:36,510 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:29:38,460 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:40,461 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:42,464 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:44,465 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:46,466 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:48,205 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:29:48,205 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:29:48,467 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:50,468 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:52,469 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:54,474 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:56,479 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:29:58,484 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:00,485 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:02,486 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:03,572 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:30:03,572 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:30:04,493 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:06,500 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:06,718 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:30:08,501 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:10,505 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:12,506 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:14,507 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:16,508 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:18,510 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:18,921 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:30:18,921 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:30:20,511 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:22,512 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:24,513 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:26,514 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:28,515 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:30,516 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:32,517 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:34,298 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:30:34,298 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:30:34,518 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:36,519 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:36,922 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:30:38,520 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:40,521 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:42,522 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:44,523 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:46,524 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:48,525 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:49,689 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:30:49,689 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:30:50,526 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:52,527 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:54,528 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:56,529 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:30:58,530 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:00,532 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:02,532 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:04,533 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:05,090 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:31:05,091 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:31:06,534 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:07,124 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:31:08,536 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:10,537 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:12,538 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:14,539 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:16,540 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:18,541 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:20,486 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:31:20,486 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:31:20,542 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:22,543 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:24,544 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:26,545 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:28,546 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:30,547 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:32,548 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:34,549 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:35,874 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:31:35,874 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:31:36,550 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:37,325 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:31:38,552 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:40,553 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:42,554 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:44,555 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:46,556 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:49,557 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:51,251 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:31:51,251 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:31:51,558 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:53,559 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:55,560 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:57,561 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:31:59,562 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:01,563 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:03,564 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:05,565 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:06,624 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:32:06,624 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:32:07,522 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:32:07,567 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:09,568 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:11,569 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:13,570 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:15,571 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:17,572 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:19,573 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:21,574 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:22,007 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:32:22,008 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:32:23,575 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:25,576 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:27,577 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:29,578 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:31,579 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:33,580 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:35,581 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:37,400 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:32:37,400 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:32:37,582 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:37,789 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:32:39,584 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:41,585 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:43,586 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:45,587 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:47,588 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:49,589 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:51,590 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:52,790 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:32:52,791 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:32:53,591 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:55,592 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:57,593 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:32:59,594 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:01,595 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:03,596 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:05,597 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:07,598 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:07,915 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:33:08,173 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:33:08,173 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:33:09,599 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:11,600 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:13,601 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:15,602 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:17,603 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:19,604 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:21,605 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:23,585 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:33:23,586 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:33:23,606 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:25,607 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:27,608 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:29,609 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:31,610 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:33,612 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:35,613 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:37,614 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:38,115 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:33:38,965 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:33:38,965 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:33:39,615 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:41,616 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:43,617 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:45,622 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:47,623 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:49,624 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:51,625 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:53,626 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:54,348 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:33:54,349 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:33:55,626 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:57,627 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:33:59,628 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:01,629 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:03,630 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:05,631 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:07,632 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:08,307 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:34:09,633 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:09,837 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:34:09,837 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:34:11,634 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:13,635 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:15,636 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:17,637 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:19,638 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:21,639 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:23,640 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:25,243 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:34:25,244 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:34:25,641 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:27,642 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:29,643 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:31,644 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:33,645 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:35,646 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:37,647 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:38,510 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:34:39,648 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:40,601 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:34:40,602 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:34:41,649 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:43,650 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:45,651 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:47,652 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:49,653 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:51,654 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:53,655 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:55,656 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:55,980 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:34:55,980 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:34:57,657 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:34:59,658 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:01,659 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:03,660 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:05,661 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:07,662 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:08,712 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:35:09,663 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:11,344 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:35:11,344 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:35:11,664 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:13,666 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:15,667 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:17,668 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:19,669 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:21,669 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:23,670 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:25,671 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:26,704 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:35:26,705 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:35:27,672 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:29,673 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:31,674 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:33,675 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:35,676 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:37,677 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:38,921 DEBUG   SenderThread:5471 [sender.py:send():235] send: stats
+2022-03-18 09:35:39,678 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:41,679 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:42,091 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:35:42,091 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:35:43,680 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:45,681 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:47,682 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:49,684 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:51,685 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:53,686 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:55,687 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:57,470 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-18 09:35:57,470 DEBUG   SenderThread:5471 [sender.py:send_request():249] send_request: stop_status
+2022-03-18 09:35:57,688 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:35:59,689 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:36:01,690 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:36:03,691 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:36:05,400 WARNING MainThread:5471 [internal.py:wandb_internal():155] Internal process interrupt: 1
+2022-03-18 09:36:05,540 DEBUG   HandlerThread:5471 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-18 09:36:05,540 DEBUG   SenderThread:5471 [sender.py:send():235] send: telemetry
+2022-03-18 09:36:05,697 INFO    Thread-7  :5471 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:36:06,535 WARNING MainThread:5471 [internal.py:wandb_internal():155] Internal process interrupt: 2
+2022-03-18 09:36:06,536 ERROR   MainThread:5471 [internal.py:wandb_internal():158] Internal process interrupted.
+2022-03-18 09:36:06,540 INFO    WriterThread:5471 [datastore.py:close():281] close: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/run-a8xlsbak.wandb
+2022-03-18 09:36:06,540 INFO    SenderThread:5471 [sender.py:finish():1078] shutting down sender
+2022-03-18 09:36:06,540 INFO    SenderThread:5471 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-18 09:36:06,541 INFO    HandlerThread:5471 [handler.py:finish():778] shutting down handler
+2022-03-18 09:36:06,698 INFO    SenderThread:5471 [dir_watcher.py:finish():313] scan: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files
+2022-03-18 09:36:06,698 INFO    SenderThread:5471 [dir_watcher.py:finish():327] scan save: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/config.yaml config.yaml
+2022-03-18 09:36:06,699 INFO    SenderThread:5471 [dir_watcher.py:finish():327] scan save: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log output.log
+2022-03-18 09:36:06,702 INFO    SenderThread:5471 [dir_watcher.py:finish():327] scan save: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/requirements.txt requirements.txt
+2022-03-18 09:36:06,705 INFO    SenderThread:5471 [dir_watcher.py:finish():327] scan save: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/wandb-metadata.json wandb-metadata.json
+2022-03-18 09:36:06,705 INFO    SenderThread:5471 [dir_watcher.py:finish():327] scan save: /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/wandb-summary.json wandb-summary.json
+2022-03-18 09:36:06,708 INFO    SenderThread:5471 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-18 09:36:06,708 INFO    SenderThread:5471 [file_pusher.py:join():150] waiting for file pusher
+2022-03-18 09:36:07,621 INFO    Thread-14 :5471 [upload_job.py:push():137] Uploaded file /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/requirements.txt
+2022-03-18 09:36:07,644 INFO    Thread-15 :5471 [upload_job.py:push():137] Uploaded file /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/wandb-summary.json
+2022-03-18 09:36:07,674 INFO    Thread-13 :5471 [upload_job.py:push():137] Uploaded file /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/output.log
+2022-03-18 09:36:07,710 INFO    Thread-12 :5471 [upload_job.py:push():137] Uploaded file /media/system/DeepLearning/projects/yolov5_mask_video/wandb/run-20220318_092133-a8xlsbak/files/config.yaml
+2022-03-18 09:36:08,466 INFO    MainThread:5471 [internal.py:handle_exit():82] Internal process exited

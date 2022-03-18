@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.13.0-35-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-03-18T02:22:54.596820",
+    "startedAt": "2022-03-18T02:22:53.076848",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650 SUPER",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--data",
+        "mask.yaml",
+        "--weights",
+        "yolov5n.pt",
+        "--img",
+        "640",
+        "--cfg",
+        "yolov5n.yaml",
+        "--batch",
+        "8"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5.git",
+        "commit": "f08ec4c323c1f77d42a16d7fc40523c19757c895"
+    },
+    "email": "1679509305@qq.com",
+    "root": "/media/system/DeepLearning/projects/yolov5_mask_video",
+    "host": "zzm-MS-7B89",
+    "username": "zzm",
+    "executable": "/usr/bin/python3"
+}

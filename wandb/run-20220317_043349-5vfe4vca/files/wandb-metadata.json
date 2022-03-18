@@ -1,0 +1,33 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.8",
+    "heartbeatAt": "2022-03-16T20:33:52.741189",
+    "startedAt": "2022-03-16T20:33:49.023139",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--data",
+        "mask.yaml",
+        "--img",
+        "640",
+        "--batch",
+        "4",
+        "--cfg",
+        "mobilenetv3small.yaml",
+        "--weights",
+        "''"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5.git",
+        "commit": "f08ec4c323c1f77d42a16d7fc40523c19757c895"
+    },
+    "email": "1679509305@qq.com",
+    "root": "E:/DeepLearning/projects/yolov5_mask_video",
+    "host": "DESKTOP-MNP5GMJ",
+    "username": "Administrator",
+    "executable": "C:\\Users\\Administrator.DESKTOP-MNP5GMJ\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+}

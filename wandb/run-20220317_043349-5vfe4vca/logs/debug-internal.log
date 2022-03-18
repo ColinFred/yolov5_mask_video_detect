@@ -1,0 +1,156 @@
+2022-03-17 04:33:49,812 INFO    MainThread:5464 [internal.py:wandb_internal():88] W&B internal server running at pid: 5464, started at: 2022-03-17 04:33:49.807648
+2022-03-17 04:33:49,813 INFO    WriterThread:5464 [datastore.py:open_for_write():77] open: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\run-5vfe4vca.wandb
+2022-03-17 04:33:49,814 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: check_version
+2022-03-17 04:33:49,819 DEBUG   SenderThread:5464 [sender.py:send():176] send: header
+2022-03-17 04:33:49,819 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: check_version
+2022-03-17 04:33:50,236 DEBUG   SenderThread:5464 [sender.py:send():176] send: run
+2022-03-17 04:33:50,244 INFO    SenderThread:5464 [sender.py:_maybe_setup_resume():395] checking resume status for None/train/5vfe4vca
+2022-03-17 04:33:51,328 INFO    SenderThread:5464 [dir_watcher.py:__init__():168] watching files in: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files
+2022-03-17 04:33:51,328 INFO    SenderThread:5464 [sender.py:_start_run_threads():696] run started: 5vfe4vca with start time 1647462829
+2022-03-17 04:33:51,328 DEBUG   SenderThread:5464 [sender.py:send():176] send: summary
+2022-03-17 04:33:51,329 INFO    SenderThread:5464 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2022-03-17 04:33:51,330 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: run_start
+2022-03-17 04:33:52,337 INFO    Thread-12 :5464 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\wandb-summary.json
+2022-03-17 04:33:52,738 DEBUG   HandlerThread:5464 [meta.py:__init__():39] meta init
+2022-03-17 04:33:52,741 DEBUG   HandlerThread:5464 [meta.py:__init__():53] meta init done
+2022-03-17 04:33:52,741 DEBUG   HandlerThread:5464 [meta.py:probe():210] probe
+2022-03-17 04:33:52,742 DEBUG   HandlerThread:5464 [meta.py:_setup_git():200] setup git
+2022-03-17 04:33:52,843 DEBUG   HandlerThread:5464 [meta.py:_setup_git():207] setup git done
+2022-03-17 04:33:52,844 DEBUG   HandlerThread:5464 [meta.py:_save_pip():57] save pip
+2022-03-17 04:33:52,844 DEBUG   HandlerThread:5464 [meta.py:_save_pip():71] save pip done
+2022-03-17 04:33:52,844 DEBUG   HandlerThread:5464 [meta.py:probe():252] probe done
+2022-03-17 04:33:52,852 DEBUG   SenderThread:5464 [sender.py:send():176] send: files
+2022-03-17 04:33:52,852 INFO    SenderThread:5464 [sender.py:_save_file():821] saving file wandb-metadata.json with policy now
+2022-03-17 04:33:52,923 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: stop_status
+2022-03-17 04:33:52,923 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: stop_status
+2022-03-17 04:33:52,926 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:53,349 INFO    Thread-12 :5464 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\output.log
+2022-03-17 04:33:53,350 INFO    Thread-12 :5464 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\requirements.txt
+2022-03-17 04:33:53,350 INFO    Thread-12 :5464 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\wandb-metadata.json
+2022-03-17 04:33:53,403 DEBUG   SenderThread:5464 [sender.py:send():176] send: config
+2022-03-17 04:33:53,403 DEBUG   SenderThread:5464 [sender.py:send():176] send: telemetry
+2022-03-17 04:33:53,403 DEBUG   SenderThread:5464 [sender.py:send():176] send: exit
+2022-03-17 04:33:53,403 INFO    SenderThread:5464 [sender.py:send_exit():281] handling exit code: 1
+2022-03-17 04:33:53,403 INFO    SenderThread:5464 [sender.py:send_exit():289] send defer
+2022-03-17 04:33:53,404 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:53,404 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:53,404 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 0
+2022-03-17 04:33:53,404 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:53,404 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 0
+2022-03-17 04:33:53,404 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 1
+2022-03-17 04:33:53,404 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:53,405 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 1
+2022-03-17 04:33:53,512 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:53,512 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 1
+2022-03-17 04:33:53,512 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 2
+2022-03-17 04:33:53,513 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:53,513 DEBUG   SenderThread:5464 [sender.py:send():176] send: stats
+2022-03-17 04:33:53,513 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 2
+2022-03-17 04:33:53,514 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:53,514 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 2
+2022-03-17 04:33:53,514 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 3
+2022-03-17 04:33:53,514 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:53,514 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 3
+2022-03-17 04:33:53,514 DEBUG   SenderThread:5464 [sender.py:send():176] send: summary
+2022-03-17 04:33:53,514 INFO    SenderThread:5464 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2022-03-17 04:33:53,515 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:53,515 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 3
+2022-03-17 04:33:53,515 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 4
+2022-03-17 04:33:53,515 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:53,515 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 4
+2022-03-17 04:33:53,515 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:53,515 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 4
+2022-03-17 04:33:53,520 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:53,992 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 5
+2022-03-17 04:33:53,993 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:53,993 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:53,993 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 5
+2022-03-17 04:33:53,993 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:53,994 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 5
+2022-03-17 04:33:53,994 INFO    SenderThread:5464 [dir_watcher.py:finish():282] shutting down directory watcher
+2022-03-17 04:33:54,097 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:54,228 INFO    Thread-17 :5464 [upload_job.py:push():133] Uploaded file C:\Users\Administrator.DESKTOP-MNP5GMJ\AppData\Local\Temp\tmp5h8x4lp4wandb\2lui3q8u-wandb-metadata.json
+2022-03-17 04:33:54,362 INFO    SenderThread:5464 [dir_watcher.py:_on_file_modified():229] file/dir modified: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\config.yaml
+2022-03-17 04:33:54,363 INFO    SenderThread:5464 [dir_watcher.py:_on_file_modified():229] file/dir modified: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\wandb-summary.json
+2022-03-17 04:33:54,363 INFO    SenderThread:5464 [dir_watcher.py:finish():312] scan: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files
+2022-03-17 04:33:54,363 INFO    SenderThread:5464 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\config.yaml config.yaml
+2022-03-17 04:33:54,363 INFO    SenderThread:5464 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\output.log output.log
+2022-03-17 04:33:54,364 INFO    SenderThread:5464 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\requirements.txt requirements.txt
+2022-03-17 04:33:54,366 INFO    SenderThread:5464 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\wandb-metadata.json wandb-metadata.json
+2022-03-17 04:33:54,369 INFO    SenderThread:5464 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\wandb-summary.json wandb-summary.json
+2022-03-17 04:33:54,372 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 6
+2022-03-17 04:33:54,373 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:54,374 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:54,374 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 6
+2022-03-17 04:33:54,375 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:54,375 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 6
+2022-03-17 04:33:54,376 INFO    SenderThread:5464 [file_pusher.py:finish():176] shutting down file pusher
+2022-03-17 04:33:54,377 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 7
+2022-03-17 04:33:54,378 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:54,378 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 7
+2022-03-17 04:33:54,378 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:54,378 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 7
+2022-03-17 04:33:54,489 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:54,867 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 8
+2022-03-17 04:33:54,867 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:54,868 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:54,868 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 8
+2022-03-17 04:33:54,868 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:54,868 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 8
+2022-03-17 04:33:54,868 INFO    SenderThread:5464 [sender.py:send_request_defer():336] send defer: 9
+2022-03-17 04:33:54,869 DEBUG   SenderThread:5464 [sender.py:send():176] send: final
+2022-03-17 04:33:54,869 DEBUG   SenderThread:5464 [sender.py:send():176] send: footer
+2022-03-17 04:33:54,869 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: defer
+2022-03-17 04:33:54,869 INFO    HandlerThread:5464 [handler.py:handle_request_defer():138] handle defer: 9
+2022-03-17 04:33:54,869 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: defer
+2022-03-17 04:33:54,869 INFO    SenderThread:5464 [sender.py:send_request_defer():298] handle sender defer: 9
+2022-03-17 04:33:54,970 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:54,970 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,079 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,079 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,189 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,189 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,298 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,298 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,407 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,407 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,461 INFO    Thread-18 :5464 [upload_job.py:push():133] Uploaded file E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\config.yaml
+2022-03-17 04:33:55,515 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,515 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,555 INFO    Thread-20 :5464 [upload_job.py:push():133] Uploaded file E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\requirements.txt
+2022-03-17 04:33:55,572 INFO    Thread-21 :5464 [upload_job.py:push():133] Uploaded file E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\wandb-summary.json
+2022-03-17 04:33:55,623 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,623 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,733 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,733 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,842 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,842 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:55,951 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:55,951 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,060 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,060 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,168 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,168 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,278 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,278 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,387 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,387 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,496 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,496 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,548 INFO    Thread-19 :5464 [upload_job.py:push():133] Uploaded file E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\files\output.log
+2022-03-17 04:33:56,605 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,605 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,715 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,715 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,827 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: poll_exit
+2022-03-17 04:33:56,827 DEBUG   SenderThread:5464 [sender.py:send_request():186] send_request: poll_exit
+2022-03-17 04:33:56,828 INFO    SenderThread:5464 [file_pusher.py:join():181] waiting for file pusher
+2022-03-17 04:33:56,829 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: get_summary
+2022-03-17 04:33:56,830 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: sampled_history
+2022-03-17 04:33:56,830 DEBUG   HandlerThread:5464 [handler.py:handle_request():121] handle_request: shutdown
+2022-03-17 04:33:56,830 INFO    HandlerThread:5464 [handler.py:finish():632] shutting down handler
+2022-03-17 04:33:56,874 INFO    WriterThread:5464 [datastore.py:close():258] close: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_043349-5vfe4vca\run-5vfe4vca.wandb
+2022-03-17 04:33:57,834 INFO    SenderThread:5464 [sender.py:finish():925] shutting down sender
+2022-03-17 04:33:57,834 INFO    SenderThread:5464 [file_pusher.py:finish():176] shutting down file pusher
+2022-03-17 04:33:57,834 INFO    SenderThread:5464 [file_pusher.py:join():181] waiting for file pusher
+2022-03-17 04:33:57,835 INFO    MainThread:5464 [internal.py:handle_exit():78] Internal process exited

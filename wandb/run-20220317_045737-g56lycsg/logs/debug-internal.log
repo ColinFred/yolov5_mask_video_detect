@@ -1,0 +1,49 @@
+2022-03-17 04:57:37,976 INFO    MainThread:3240 [internal.py:wandb_internal():88] W&B internal server running at pid: 3240, started at: 2022-03-17 04:57:37.972045
+2022-03-17 04:57:37,978 INFO    WriterThread:3240 [datastore.py:open_for_write():77] open: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\run-g56lycsg.wandb
+2022-03-17 04:57:37,978 DEBUG   HandlerThread:3240 [handler.py:handle_request():121] handle_request: check_version
+2022-03-17 04:57:37,983 DEBUG   SenderThread:3240 [sender.py:send():176] send: header
+2022-03-17 04:57:37,983 DEBUG   SenderThread:3240 [sender.py:send_request():186] send_request: check_version
+2022-03-17 04:57:38,418 DEBUG   SenderThread:3240 [sender.py:send():176] send: run
+2022-03-17 04:57:38,426 INFO    SenderThread:3240 [sender.py:_maybe_setup_resume():395] checking resume status for None/train/g56lycsg
+2022-03-17 04:57:39,491 INFO    SenderThread:3240 [dir_watcher.py:__init__():168] watching files in: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files
+2022-03-17 04:57:39,491 INFO    SenderThread:3240 [sender.py:_start_run_threads():696] run started: g56lycsg with start time 1647464257
+2022-03-17 04:57:39,491 DEBUG   SenderThread:3240 [sender.py:send():176] send: summary
+2022-03-17 04:57:39,492 INFO    SenderThread:3240 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2022-03-17 04:57:39,493 DEBUG   HandlerThread:3240 [handler.py:handle_request():121] handle_request: run_start
+2022-03-17 04:57:40,499 INFO    Thread-12 :3240 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\wandb-summary.json
+2022-03-17 04:57:40,876 DEBUG   HandlerThread:3240 [meta.py:__init__():39] meta init
+2022-03-17 04:57:40,879 DEBUG   HandlerThread:3240 [meta.py:__init__():53] meta init done
+2022-03-17 04:57:40,879 DEBUG   HandlerThread:3240 [meta.py:probe():210] probe
+2022-03-17 04:57:40,880 DEBUG   HandlerThread:3240 [meta.py:_setup_git():200] setup git
+2022-03-17 04:57:40,982 DEBUG   HandlerThread:3240 [meta.py:_setup_git():207] setup git done
+2022-03-17 04:57:40,982 DEBUG   HandlerThread:3240 [meta.py:_save_pip():57] save pip
+2022-03-17 04:57:40,983 DEBUG   HandlerThread:3240 [meta.py:_save_pip():71] save pip done
+2022-03-17 04:57:40,983 DEBUG   HandlerThread:3240 [meta.py:probe():252] probe done
+2022-03-17 04:57:40,986 DEBUG   SenderThread:3240 [sender.py:send():176] send: files
+2022-03-17 04:57:40,986 INFO    SenderThread:3240 [sender.py:_save_file():821] saving file wandb-metadata.json with policy now
+2022-03-17 04:57:41,059 DEBUG   HandlerThread:3240 [handler.py:handle_request():121] handle_request: stop_status
+2022-03-17 04:57:41,059 DEBUG   SenderThread:3240 [sender.py:send_request():186] send_request: stop_status
+2022-03-17 04:57:41,503 INFO    Thread-12 :3240 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\output.log
+2022-03-17 04:57:41,504 INFO    Thread-12 :3240 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\wandb-metadata.json
+2022-03-17 04:57:41,504 INFO    Thread-12 :3240 [dir_watcher.py:_on_file_created():216] file/dir created: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\requirements.txt
+2022-03-17 04:57:41,513 DEBUG   SenderThread:3240 [sender.py:send():176] send: config
+2022-03-17 04:57:42,303 INFO    Thread-17 :3240 [upload_job.py:push():133] Uploaded file C:\Users\Administrator.DESKTOP-MNP5GMJ\AppData\Local\Temp\tmp8np78okbwandb\2v4fy1kx-wandb-metadata.json
+2022-03-17 04:57:43,505 INFO    Thread-12 :3240 [dir_watcher.py:_on_file_modified():229] file/dir modified: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\config.yaml
+2022-03-17 04:57:47,185 WARNING MainThread:3240 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2022-03-17 04:57:49,617 WARNING MainThread:3240 [internal.py:wandb_internal():147] Internal process interrupt: 2
+2022-03-17 04:57:49,617 ERROR   MainThread:3240 [internal.py:wandb_internal():150] Internal process interrupted.
+2022-03-17 04:57:50,448 INFO    WriterThread:3240 [datastore.py:close():258] close: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\run-g56lycsg.wandb
+2022-03-17 04:57:50,527 INFO    SenderThread:3240 [sender.py:finish():925] shutting down sender
+2022-03-17 04:57:50,527 INFO    HandlerThread:3240 [handler.py:finish():632] shutting down handler
+2022-03-17 04:57:50,527 INFO    SenderThread:3240 [dir_watcher.py:finish():282] shutting down directory watcher
+2022-03-17 04:57:51,540 INFO    SenderThread:3240 [dir_watcher.py:finish():312] scan: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files
+2022-03-17 04:57:51,541 INFO    SenderThread:3240 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\config.yaml config.yaml
+2022-03-17 04:57:51,541 INFO    SenderThread:3240 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\output.log output.log
+2022-03-17 04:57:51,542 INFO    SenderThread:3240 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\requirements.txt requirements.txt
+2022-03-17 04:57:51,544 INFO    SenderThread:3240 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\wandb-metadata.json wandb-metadata.json
+2022-03-17 04:57:51,545 INFO    SenderThread:3240 [dir_watcher.py:finish():318] scan save: E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\wandb-summary.json wandb-summary.json
+2022-03-17 04:57:51,547 INFO    SenderThread:3240 [file_pusher.py:finish():176] shutting down file pusher
+2022-03-17 04:57:51,548 INFO    SenderThread:3240 [file_pusher.py:join():181] waiting for file pusher
+2022-03-17 04:57:52,705 INFO    Thread-19 :3240 [upload_job.py:push():133] Uploaded file E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\requirements.txt
+2022-03-17 04:57:52,725 INFO    Thread-18 :3240 [upload_job.py:push():133] Uploaded file E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\config.yaml
+2022-03-17 04:57:52,962 INFO    Thread-20 :3240 [upload_job.py:push():133] Uploaded file E:\DeepLearning\projects\yolov5_mask_video\wandb\run-20220317_045737-g56lycsg\files\wandb-summary.json
