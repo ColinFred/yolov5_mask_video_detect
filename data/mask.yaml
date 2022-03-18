@@ -1,5 +1,5 @@
-train: E:\dataset\MASK\train\images
-val: E:\dataset\MASK\valid\images
+train: /media/system/dataset/MASK-LARGE/train/images
+val: /media/system/dataset/MASK-LARGE/val/images
 
 nc: 2
 names: ['mask', 'no-mask']

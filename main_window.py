@@ -1,7 +1,4 @@
-import glob
-import os
-import random
-import time
+import threading
 
 import torch
 from PyQt5 import QtWidgets, QtGui, QtCore
@@ -9,20 +6,54 @@ from PyQt5.QtGui import QPixmap, QImage
 from PyQt5.QtCore import Qt
 
 import numpy as np
-from PyQt5.QtWidgets import QMessageBox
+from PyQt5.QtWidgets import QMessageBox, QTableWidgetItem
 from cv2 import cv2
 from torch.backends import cudnn
 
-from demo import Ui_Form
+# from demo import Ui_Form
+from mask_img_detect import Ui_Form
 import sys
 
-from utils.datasets import letterbox, vid_formats, img_formats, LoadImages, LoadStreams
-from utils.general import check_img_size, check_imshow, scale_coords
-from utils.torch_utils import select_device
+from models.common import DetectMultiBackend
+from utils.datasets import IMG_FORMATS, VID_FORMATS, LoadImages, LoadStreams
+from utils.general import (LOGGER, check_file, check_img_size, check_imshow, check_requirements, colorstr,
+                           increment_path, non_max_suppression, print_args, scale_coords, strip_optimizer, xyxy2xywh)
+from utils.plots import Annotator, colors, save_one_box
+from utils.torch_utils import select_device, time_sync
 
-from models.experimental import attempt_load
 import os
 from pathlib import Path
+import inspect
+import ctypes
+
+
+############################################################################################
+#
+#   微信：zzm17864296700
+#
+############################################################################################
+
+
+
+
+def _async_raise(tid, exctype):
+    """raises the exception, performs cleanup if needed"""
+    tid = ctypes.c_long(tid)
+    if not inspect.isclass(exctype):
+        exctype = type(exctype)
+    res = ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, ctypes.py_object(exctype))
+    if res == 0:
+        raise ValueError("invalid thread id")
+    elif res != 1:
+        # """if it returns a number greater than one, you're in trouble,
+        # and you should call it again with exc=NULL to revert the effect"""
+        ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, None)
+        raise SystemError("PyThreadState_SetAsyncExc failed")
+
+
+# 关闭线程
+def stop_thread(thread):
+    _async_raise(thread.ident, SystemExit)
 
 
 class MainWindow(QtWidgets.QWidget, Ui_Form):
@@ -30,10 +61,27 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
         super(MainWindow, self).__init__()
         self.setupUi(self)
 
+        self.init()
+
+    def init(self):
+        """初始化"""
+
+        # 改变界面样式
+        self.tabWidget.setTabText(0, "图片检测")
+        self.tabWidget.setTabText(1, "视频检测")
+
+        # 参数
+        self.output_size = 480
+        self.image = False
+        self.video = False
+        self.webcam = False
+
         self.label_image.setVisible(True)
         self.label_image.setScaledContents(True)
 
-        test_img = QPixmap("test.jpg")
+        # 初始界面图片
+        self.img_source = "images/test_2.jpg"
+        test_img = QPixmap(self.img_source)
         self.label_image.setFixedSize(test_img.size())
         self.label_image.setPixmap(test_img)
 
@@ -42,22 +90,76 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
         self.timer_video = QtCore.QTimer()
 
         # 信号槽绑定
+        # 加载图片
         self.pushButton_openimg.clicked.connect(self.open_img)
+        self.pushButton_detect.clicked.connect(self.detect_img)
+
+        # 加载模型
+        self.pushButton_choose_model.clicked.connect(self.load_model)
+        self.pushButton_choose_model_2.clicked.connect(self.load_model)
+
+        # 加载视频
         self.pushButton_openvideo.clicked.connect(self.slot_video_button)
-        self.pushButton_opencam.clicked.connect(self.slot_camera_button)
-        self.pushButton_detect.clicked.connect(self.detect)
 
-        self.timer_camera.timeout.connect(self.show_camera)
-        self.timer_video.timeout.connect(self.show_video)
+        # 加载摄像头
+        self.pushButton_opencamera.clicked.connect(self.slot_camera_button)
 
-        self.load_model()
+
+        # 初始化模型
+        self.device = select_device()
+        self.label_detect_device.setText(str(self.device))
+        self.model = DetectMultiBackend("weights/best.pt", device=self.device, dnn=False)
+        self.label_model.setText("weights/best.pt")
+
+    ############################################################################################
+    #
+    #   模式切换
+    #
+    ############################################################################################
+
+    def set_mode(self, mode):
+        """切换模式
+        mode=0:关闭所有
+        mode=1:图片检测
+        mode=2:视频检测
+        mode=3:摄像头检测
+        """
+        self.image = False
+        self.video = False
+        self.webcam = False
+
+        self.pushButton_choose_model_2.setEnabled(True)
+        self.pushButton_opencamera.setEnabled(True)
+        self.pushButton_openvideo.setEnabled(True)
+
+        if mode == 0:  # 全部停止
+            pass
+        elif mode == 1:  # 检测图片
+            self.image = True
+        elif mode == 2:  # 检测视频
+            self.video = True
+            # 关闭摄像头功能
+            self.pushButton_choose_model_2.setEnabled(False)
+            self.pushButton_opencamera.setEnabled(False)
+        elif mode == 3:  # 检测摄像头
+            self.webcam = True
+            # 关闭视频功能
+            self.pushButton_choose_model_2.setEnabled(False)
+            self.pushButton_openvideo.setEnabled(False)
+
+    ############################################################################################
+    #
+    #   加载yolov5训练好的模型
+    #
+    ############################################################################################
 
     def load_model(self):
-        # 加载模型
-        root_path = os.getcwd()
-        sys.path.insert(0, root_path + "/yolov5")
-        self.device = select_device()
-        self.model = attempt_load("mask_400_best.pt", map_location=self.device)
+        modelName, modelType = QtWidgets.QFileDialog.getOpenFileName(self, "选取文件", os.path.join(os.getcwd(), "weights"),
+                                                                     "All Files(*);;*.pt *.pth")
+
+        self.model = DetectMultiBackend(modelName, device=self.device, dnn=False)
+        self.label_model.setText(modelName)
+        print("模型加载完成")
 
     ############################################################################################
     #
@@ -67,14 +169,13 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
 
     def open_img(self):
         # 打开图片文件
-        imgName, fileType = QtWidgets.QFileDialog.getOpenFileName(self, "选取文件", os.getcwd(),
-                                                                  "All Files(*);;Text Files(*.txt)")
-
-        names = self.model.module.names if hasattr(self.model, 'module') else self.model.names
-        colors = [[random.randint(0, 255) for _ in range(3)] for _ in names]
-        print(names, colors)
-
+        imgName, fileType = QtWidgets.QFileDialog.getOpenFileName(self, "选取文件", os.path.join(os.getcwd(), "images"),
+                                                                  "All Files(*);;*.jpg *.png *.tif *.jpeg")
+        print("打开图片：", imgName)
+        self.img_source = imgName
         img = QPixmap(imgName)
+
+        self.set_mode(1)
         self.label_image.setFixedSize(img.size())
         self.label_image.setPixmap(img)
 
@@ -85,7 +186,7 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
     ############################################################################################
     def slot_video_button(self):
         # 视频
-        if self.timer_video.isActive() == False:
+        if not self.video:
             # 打开视频函数
             self.open_video()
         else:
@@ -95,29 +196,24 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
     def open_video(self):
         # 打开视频文件夹选取视频文件
         videoName, fileType = QtWidgets.QFileDialog.getOpenFileName(self, "选取文件", os.getcwd(),
-                                                                    "All Files(*);")
+                                                                    "All Files(*);;*.jpg *.png *.tif *.jpeg")
 
         # 打开视频
-        print(videoName)
-        self.cap = cv2.VideoCapture(videoName)
-        # self.cap.open(0)
-        self.timer_video.start(30)
+        self.vid_source = videoName
+
+        # 视频检测
+        self.set_mode(2)
         self.pushButton_openvideo.setText("关闭视频")
+
+        self.th = threading.Thread(target=self.detect_img)
+        self.th.start()
 
     def close_video(self):
         # 关闭视频
-        self.timer_video.stop()
-        self.cap.release()
-        self.label_image.clear()
+        self.set_mode(0)
+        stop_thread(self.th)
+        self.label_image_2.clear()
         self.pushButton_openvideo.setText('打开视频')
-
-    def show_video(self):
-        # 显示视频图像
-        flag, image = self.cap.read()
-        show = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        showImage = QImage(show.data, show.shape[1], show.shape[0], QImage.Format_RGB888)
-        self.label_image.setFixedSize(showImage.size())
-        self.label_image.setPixmap(QPixmap.fromImage(showImage))
 
     ############################################################################################
     #
@@ -126,7 +222,7 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
     ############################################################################################
 
     def slot_camera_button(self):
-        if self.timer_camera.isActive() == False:
+        if not self.webcam:
             print("打开摄像头")
             # 打开摄像头并显示图像信息
             self.open_camera()
@@ -137,47 +233,39 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
 
     def open_camera(self):
         # 打开摄像头
-        self.cap = cv2.VideoCapture(0)
-        flag = self.cap.open(0)
-        if flag is False:
-            QtWidgets.QMessageBox.warning(self, u"Warning", u"请检测相机与电脑是否连接正确",
-                                          buttons=QtWidgets.QMessageBox.Ok,
-                                          defaultButton=QtWidgets.QMessageBox.Ok)
-
-        else:
-            self.timer_camera.start(30)
-            self.pushButton_opencam.setText("关闭摄像头")
+        self.vid_source = '0'
+        self.set_mode(3)
+        self.pushButton_opencamera.setText('关闭摄像头')
+        self.th = threading.Thread(target=self.detect_img)
+        self.th.start()
 
     def close_camera(self):
         # 关闭摄像头
-        self.timer_camera.stop()
-        self.cap.release()
-        self.label_image.clear()
-        self.pushButton_opencam.setText('打开摄像头')
-
-    def show_camera(self):
-        # 显示图像
-        flag, image = self.cap.read()
-        show = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        showImage = QImage(show.data, show.shape[1], show.shape[0], QImage.Format_RGB888)
-        self.label_image.setFixedSize(showImage.size())
-        self.label_image.setPixmap(QPixmap.fromImage(showImage))
+        self.set_mode(0)
+        stop_thread(self.th)
+        self.label_image_2.clear()
+        self.pushButton_opencamera.setText('打开摄像头')
 
     ############################################################################################
     #
-    #   检测
+    #   开启检测
     #
     ############################################################################################
 
     def detect_img(self):
+        device = self.device
         model = self.model
         output_size = self.output_size
-        source = self.img2predict  # file/dir/URL/glob, 0 for webcam
+        source = ''
+        if self.image:
+            source = self.img_source  # file/dir/URL/glob, 0 for webcam
+        elif self.video or self.webcam:
+            source = self.vid_source
+            print("source:", source)
         imgsz = [640, 640]  # inference size (pixels)
-        conf_thres = 0.25  # confidence threshold
+        conf_thres = 0.5  # confidence threshold
         iou_thres = 0.45  # NMS IOU threshold
         max_det = 1000  # maximum detections per image
-        device = self.device  # cuda device, i.e. 0 or 0,1,2,3 or cpu
         view_img = False  # show results
         save_txt = False  # save results to *.txt
         save_conf = False  # save confidences in --save-txt labels
@@ -191,21 +279,22 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
         hide_labels = False  # hide labels
         hide_conf = False  # hide confidences
         half = False  # use FP16 half-precision inference
-        dnn = False  # use OpenCV DNN for ONNX inference
-        print(source)
+        webcam = self.webcam
+        tmp_dir = "images/tmp"
+        if not os.path.exists(tmp_dir):
+            os.makedirs(tmp_dir)
+        # print(f"开始检测图片：{source}")
         if source == "":
             QMessageBox.warning(self, "请上传", "请先上传图片再进行检测")
         else:
             source = str(source)
-            device = select_device(self.device)
-            webcam = False
             stride, names, pt, jit, onnx = model.stride, model.names, model.pt, model.jit, model.onnx
             imgsz = check_img_size(imgsz, s=stride)  # check image size
             save_img = not nosave and not source.endswith('.txt')  # save inference images
             # Dataloader
             if webcam:
-                view_img = check_imshow()
-                cudnn.benchmark = True  # set True to speed up constant image size inference
+                # view_img = check_imshow()
+                # cudnn.benchmark = True  # set True to speed up constant image size inference
                 dataset = LoadStreams(source, img_size=imgsz, stride=stride, auto=pt and not jit)
                 bs = len(dataset)  # batch_size
             else:
@@ -253,8 +342,11 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
                         det[:, :4] = scale_coords(im.shape[2:], det[:, :4], im0.shape).round()
 
                         # Print results
-                        for c in det[:, -1].unique():
+                        for _, c in enumerate(det[:, -1].unique()):
+                            # 显示检测结果
                             n = (det[:, -1] == c).sum()  # detections per class
+                            new_item = QTableWidgetItem(str(n.item()))
+                            self.tableWidget_result.setItem(_, 0, new_item)
                             s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
 
                         # Write results
@@ -275,39 +367,31 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
                                 #                  BGR=True)
                     # Print time (inference-only)
                     LOGGER.info(f'{s}Done. ({t3 - t2:.3f}s)')
+
                     # Stream results
                     im0 = annotator.result()
-                    # if view_img:
-                    #     cv2.imshow(str(p), im0)
-                    #     cv2.waitKey(1)  # 1 millisecond
+                    if view_img:
+                        cv2.imshow(str(p), im0)
+                        cv2.waitKey(1)  # 1 millisecond
                     # Save results (image with detections)
                     resize_scale = output_size / im0.shape[0]
                     im0 = cv2.resize(im0, (0, 0), fx=resize_scale, fy=resize_scale)
-                    cv2.imwrite("images/tmp/single_result.jpg", im0)
-                    # 目前的情况来看，应该只是ubuntu下会出问题，但是在windows下是完整的，所以继续
-                    self.right_img.setPixmap(QPixmap("images/tmp/single_result.jpg"))
+                    tmp_imgpath = os.path.join(tmp_dir, "single_result.jpg")
+                    cv2.imwrite(tmp_imgpath, im0)
+                    img = QPixmap(tmp_imgpath)
+                    # self.label_image.setFixedSize(img.size())
+                    if self.image:
+                        self.label_image.setPixmap(QPixmap(img))
+                        self.label_detect_time.setText(f"{t3 - t2:.3f}s")
+                    elif self.webcam or self.video:
+                        self.label_image_2.setPixmap(QPixmap(img))
+                        self.label_detect_time.setText(f"{t3 - t2:.3f}s")
+
+            self.set_mode(0)
 
 
 if __name__ == "__main__":
-    # app = QtWidgets.QApplication(sys.argv)
-    # myshow = MainWindow()
-    # myshow.show()
-    # sys.exit(app.exec_())
-
-    # root_path = os.getcwd()
-    # sys.path.insert(0, root_path + "/yolov5")
-
-    device = select_device()
-    model = attempt_load("weights/mask_400_best.pt", map_location=device)
-    stride = int(model.stride.max())  # model stride
-    print("stride:", stride)
-    imgsz = check_img_size(640, s=stride)  # check img_size
-    print("image size:", imgsz)
-    names = model.module.names if hasattr(model, 'module') else model.names
-    colors = [[random.randint(0, 255) for _ in range(3)] for _ in names]
-    print("names:", names, "colors:", colors)
-
-    dataset = LoadImages("yolov5/data/images", img_size=imgsz, stride=stride)
-    for path, img, im0s, vid_cap in dataset:
-        print(img)
-        break
+    app = QtWidgets.QApplication(sys.argv)
+    myshow = MainWindow()
+    myshow.show()
+    sys.exit(app.exec_())
